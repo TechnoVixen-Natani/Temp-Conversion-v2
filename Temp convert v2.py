@@ -95,7 +95,7 @@ menu_main = ("\nWhich temperature are you converting from?\n"
              "4. Rankine\n"
              "5. Quit\n")
 while True:
-    command_main = input(menu_main).lower().strip()
+    command_main = input(menu_main).strip()
     if command_main == '1':
         user_temp_f = float(input('Please enter your temperature: '))
         user_temp_c = f_to_c(user_temp_f)
