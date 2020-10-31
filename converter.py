@@ -125,7 +125,7 @@ while True:
         all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r)
 
     elif command_main == '5':
-        print('Thank you for using my Temperature converter, have a nice day!')
+        print('Thank you for using my temperature converter, have a nice day!')
         break
 
     else:
