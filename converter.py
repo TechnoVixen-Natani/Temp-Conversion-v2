@@ -89,43 +89,43 @@ def all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r):
 # menu prompt for user with loop so they can choose to keep trying other temps.
 menu_main = ("\nWhich temperature are you converting from?\n"
              "Please select from list\n"
-             "1.Fahrenheit\n"
-             "2.Celsius\n"
-             "3.Kelvin\n"
-             "4.Rankine\n"
-             "5.Quit\n")
+             "1. Fahrenheit\n"
+             "2. Celsius\n"
+             "3. Kelvin\n"
+             "4. Rankine\n"
+             "5. Quit\n")
 while True:
-    command_main = input(menu_main).lower().strip()
+    command_main = input(menu_main).strip()
     if command_main == '1':
-        user_temp_f = float(input('Please enter your temperature:'))
+        user_temp_f = float(input('Please enter your temperature: '))
         user_temp_c = f_to_c(user_temp_f)
         user_temp_k = f_to_k(user_temp_f)
         user_temp_r = f_to_r(user_temp_f)
         all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r)
 
     elif command_main == '2':
-        user_temp_c = float(input('Please enter your temperature:'))
+        user_temp_c = float(input('Please enter your temperature: '))
         user_temp_k = c_to_k(user_temp_c)
         user_temp_f = c_to_f(user_temp_c)
         user_temp_r = c_to_r(user_temp_c)
         all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r)
 
     elif command_main == '3':
-        user_temp_k = float(input('Please enter your temperature:'))
+        user_temp_k = float(input('Please enter your temperature: '))
         user_temp_f = f_to_k(user_temp_k)
         user_temp_c = c_to_k(user_temp_k)
         user_temp_r = k_to_r(user_temp_k)
         all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r)
 
     elif command_main == '4':
-        user_temp_r = float(input('Please enter your temperature:'))
+        user_temp_r = float(input('Please enter your temperature: '))
         user_temp_f = r_to_f(user_temp_r)
         user_temp_k = r_to_k(user_temp_r)
         user_temp_c = r_to_c(user_temp_r)
         all_temps(user_temp_f, user_temp_c, user_temp_k, user_temp_r)
 
     elif command_main == '5':
-        print('Thank you for using my Temperature converter, have a nice day!')
+        print('Thank you for using my temperature converter, have a nice day!')
         break
 
     else:
